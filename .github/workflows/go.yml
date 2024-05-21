@@ -34,7 +34,7 @@ jobs:
       run: go test -v main_test.go
 
     - name: show eviroment
-      run: echo "TESTE = ${{ secrets.TESTE }}"
+      run: echo "TESTE = ${{ secrets.test_ci.TESTE }}"
       
   
   build:
